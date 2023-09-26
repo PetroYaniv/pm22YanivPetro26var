@@ -1,0 +1,22 @@
+{
+  "name": "webprogramirg",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PetroYaniv/webprogramingpm22.git"
+  },
+  "author": "YanivP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PetroYaniv/webprogramingpm22/issues"
+  },
+  "homepage": "https://github.com/PetroYaniv/webprogramingpm22#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
