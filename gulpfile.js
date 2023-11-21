@@ -1,6 +1,6 @@
-const {src, dest,watch, series}=require("gulp");
+const {scr, dest,watch,series}=require("gulp");
 const concat = require("gulp-concat");
-const sass = require("gulp-sass")(require('sass'))
+const sass = require("gulp-sass");
 const autoprefixer = require("gulp-autoprefixer");
 const cssnano = require("gulp-cssnano");
 const rename = require("gulp-rename");
@@ -9,11 +9,11 @@ const imagemin = require("gulp-imagemin");
 const browserSync = require('browser-sync').create();
 
 function task_html(){
-
     return src("app/*.html")
         .pipe(dest("dist"));
 }
 exports.html = task_html
+
 function  task_browser(){
     browserSync.init({
         server: {
@@ -23,9 +23,15 @@ function  task_browser(){
 }
 
 exports.browsersync = task_browser
-function task_scss(){
+
+function task_scss() {
     return src("app/sass/*.scss")
         .pipe(concat('style.scss'))
+}
+
+function task_sass(){
+    return scr("app/sass/*.sass")
+        .pipe(concat('style.sass'))
         .pipe(sass())
         .pipe(autoprefixer({
             browsers:['last 2 versions'],
@@ -35,10 +41,11 @@ function task_scss(){
         .pipe(rename({suffix:'.min'}))
         .pipe(dest("dist/css"));
 }
+
 exports.sass = task_scss
 
-function task_scripts(){
-    return src("app/js/*.js")
+function task_scripts() {
+    return scr("app/js*.js")
         .pipe(concat('script.js'))
         .pipe(uglify())
         .pipe(dest("dist/js"));
@@ -54,6 +61,7 @@ function task_imgs(){
         }))
         .pipe(dest("dist/img"))
 }
+
 exports.imgs = task_imgs
 
 function task_watch(){
@@ -61,9 +69,7 @@ function task_watch(){
     watch("app/js/*.js", task_scripts);
     watch("app/sass/*.scss", task_scss);
     watch("app/images/*.+(jpg|jpeg|png|git)", task_imgs);
-
 }
 exports.watch = task_watch
 
 exports.default =series(task_html, task_scss, task_scripts, task_imgs, task_browser, task_watch)
-
