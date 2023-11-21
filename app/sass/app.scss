@@ -1,0 +1,2108 @@
+/* Define standard variables and values for website */
+$bgcolor: lightblue;
+$textcolor: darkblue;
+$fontsize: 18px;
+
+@font-face {
+  font-family: "Font";
+  src: url("app/fonts/Roboto-Bold.ttf") format("truetype");
+}
+p {font-family: "Arial"}
+body {
+  margin: 0;
+
+}
+
+
+
+.sidebar {
+  background-color: #333333;
+  min-height: 422vh;
+  width: 80px;
+}
+
+.wrapper {
+  position: absolute;
+  width: calc(100% - 80px);
+  top: 0;
+  padding-left: 80px;
+}
+
+.Page {
+  position: relative;
+}
+
+.IconP {
+  position: relative;
+  padding-top: 160px;
+  padding-left: 15px;
+}
+
+.IconPonl {
+  position: absolute;
+  padding-left: 39px;
+  padding-top: 2px;
+}
+
+.HeaderMenu {
+  position: absolute;
+  align-items: center;
+  display: flex;
+  top: 25px;
+  width: 20px;
+  padding-left: 10px;
+}
+
+.DT1 {
+  position: absolute;
+  padding-top: 435px;
+  right: 270px;
+}
+
+.DT11 {
+  position: absolute;
+  padding-top: 441px;
+  right: 277px;
+}
+
+.DT3 {
+  position: absolute;
+  padding-top: 405px;
+  right: 355px;
+}
+
+.DT4 {
+  position: absolute;
+  padding-top: 338px;
+  right: 333px;
+}
+
+.DT44 {
+  position: absolute;
+  padding-top: 344px;
+  right: 340px;
+}
+
+.DT7 {
+  position: absolute;
+  padding-top: 265px;
+  right: 445px;
+}
+
+.DT77 {
+  position: absolute;
+  padding-top: 271px;
+  right: 452px;
+}
+
+.DT10 {
+  position: absolute;
+  padding-top: 240px;
+  right: 490px;
+}
+
+.DT101 {
+  position: absolute;
+  padding-top: 246px;
+  right: 497px;
+}
+
+.DT8 {
+  position: absolute;
+  padding-top: 315px;
+  right: 475px;
+}
+
+.DT88 {
+  position: absolute;
+  padding-top: 321px;
+  right: 482px;
+}
+
+.DT9 {
+  position: absolute;
+  padding-top: 65px;
+  right: 485px;
+}
+
+.DT99 {
+  position: absolute;
+  padding-top: 71px;
+  right: 492px;
+}
+
+.DT5 {
+  position: absolute;
+  padding-top: 405px;
+  right: 400px;
+}
+
+.DT55 {
+  position: absolute;
+  padding-top: 411px;
+  right: 407px;
+}
+
+.DT03 {
+  position: absolute;
+  padding-top: 290px;
+  right: 750px;
+}
+
+.DT013 {
+  position: absolute;
+  padding-top: 296px;
+  right: 757px;
+}
+
+.DT05 {
+  position: absolute;
+  padding-top: 260px;
+  right: 800px;
+}
+
+.DT015 {
+  position: absolute;
+  padding-top: 266px;
+  right: 807px;
+}
+
+.DT06 {
+  position: absolute;
+  padding-top: 250px;
+  right: 800px;
+}
+
+.DT016 {
+  position: absolute;
+  padding-top: 256px;
+  right: 807px;
+}
+
+.DT07 {
+  position: absolute;
+  padding-top: 250px;
+  right: 823px;
+}
+
+.DT017 {
+  position: absolute;
+  padding-top: 256px;
+  right: 830px;
+}
+
+.DT08 {
+  position: absolute;
+  padding-top: 243px;
+  right: 812px;
+}
+
+.DT018 {
+  position: absolute;
+  padding-top: 249px;
+  right: 819px;
+}
+
+.DT09 {
+  position: absolute;
+  padding-top: 70px;
+  right: 853px;
+}
+
+.DT019 {
+  position: absolute;
+  padding-top: 76px;
+  right: 860px;
+}
+
+.DT025 {
+  position: absolute;
+  padding-top: 30px;
+  right: 836px;
+}
+
+.DT0125 {
+  position: absolute;
+  padding-top: 38px;
+  right: 849px;
+}
+
+.DT020 {
+  position: absolute;
+  padding-top: 130px;
+  left: 333px;
+}
+
+.DT0120 {
+  position: absolute;
+  padding-top: 136px;
+  left: 340px;
+}
+
+.DT022 {
+  position: absolute;
+  padding-top: 343px;
+  left: 407px;
+}
+
+.DT0122 {
+  position: absolute;
+  padding-top: 349px;
+  left: 414px;
+}
+
+.DT023 {
+  position: absolute;
+  padding-top: 343px;
+  left: 425px;
+}
+
+.DT0123 {
+  position: absolute;
+  padding-top: 349px;
+  left: 432px;
+}
+
+.DT024 {
+  position: absolute;
+  padding-top: 314px;
+  left: 398px;
+}
+
+.DT0124 {
+  position: absolute;
+  padding-top: 321px;
+  left: 404px;
+}
+
+.DT021 {
+  position: absolute;
+  padding-top: 182px;
+  left: 265px;
+}
+
+.DT0121 {
+  position: absolute;
+  padding-top: 188px;
+  left: 272px;
+}
+
+.DT04 {
+  position: absolute;
+  padding-top: 315px;
+  right: 740px;
+}
+
+.DT014 {
+  position: absolute;
+  padding-top: 321px;
+  right: 747px;
+}
+
+.DT02 {
+  position: absolute;
+  padding-top: 190px;
+  right: 635px;
+}
+
+.DT012 {
+  position: absolute;
+  padding-top: 196px;
+  right: 642px;
+}
+
+.DT01 {
+  position: absolute;
+  padding-top: 140px;
+  right: 580px;
+}
+
+.DT011 {
+  position: absolute;
+  padding-top: 146px;
+  right: 587px;
+}
+
+.DT6 {
+  position: absolute;
+  padding-top: 145px;
+  right: 400px;
+}
+
+.DT66 {
+  position: absolute;
+  padding-top: 151px;
+  right: 407px;
+}
+
+.DT33 {
+  position: absolute;
+  padding-top: 411px;
+  right: 362px;
+}
+
+.DT2 {
+  position: absolute;
+  padding-top: 420px;
+  right: 340px;
+}
+
+.DT22 {
+  position: absolute;
+  padding-top: 426px;
+  right: 347px;
+}
+
+.Search {
+
+  margin-left: 80px;
+  padding-top: 15px;
+}
+
+.Search121 {
+  position: relative;
+
+}
+
+.Search2 {
+  position: absolute;
+  left: 20px;
+  font-size: 12px;
+  bottom: 4px;
+}
+
+.Search3 {
+  position: absolute;
+  left: 220px;
+  padding-top: 13px;
+}
+
+.HeadI {
+  padding-right: 25px;
+  position: absolute;
+  display: flex;
+  right: 35px;
+  align-items: center;
+  top: 20px;
+}
+
+.HeadI2 {
+  position: relative;
+  margin-right: 30px;
+  font-size: 10px;
+}
+
+.HeadI1 {
+
+  margin-right: 30px;
+  font-size: 10px;
+}
+
+.HeadI23 {
+  position: absolute;
+  color: white;
+  right: 2px;
+  bottom: 7px;
+}
+
+.HeadI22 {
+  position: absolute;
+  bottom: 12px;
+  right: -6px;
+
+}
+
+.HeadI3 {
+  position: relative;
+  margin-right: 30px;
+  font-size: 10px;
+}
+
+.HeadI33 {
+  position: absolute;
+  right: 2px;
+  bottom: 7px;
+  color: white;
+}
+
+.HeadI32 {
+  position: absolute;
+  bottom: 12px;
+  right: -6px;
+
+}
+
+.HeadI4 {
+  position: relative;
+  margin-right: 30px;
+  font-size: 10px;
+}
+
+.HeadI42 {
+  position: absolute;
+  bottom: 17px;
+  right: 2px;
+}
+
+.HeadI43 {
+  position: absolute;
+  bottom: 12px;
+  right: -5px;
+
+}
+
+.HeadI5 {
+
+}
+
+.G11 {
+  position: absolute;
+  padding-left: 70px;
+
+
+}
+
+.G12 {
+  position: absolute;
+  padding-left: 165px;
+  top: 20px;
+
+}
+
+.G13 {
+  position: absolute;
+  padding-left: 180px;
+
+}
+
+.G123 {
+  position: absolute;
+  padding-left: 424px;
+  top: 20px;
+}
+
+.G14 {
+  position: absolute;
+  padding-left: 70px;
+  top: 8px;
+  width: 70px;
+  font-size:30px ;
+}
+
+.G15 {
+  position: absolute;
+  padding-left: 70px;
+  top: 62px;
+  width: 370px;
+}
+
+.G16 {
+  position: absolute;
+  padding-left: 70px;
+  top: 135px;
+
+}
+
+.G17 {
+  position: absolute;
+  padding-left: 84px;
+  top: 122px;
+
+}
+
+.G18 {
+  position: absolute;
+  padding-left: 143px;
+  top: 160px;
+
+}
+
+.G19 {
+  position: absolute;
+  padding-left: 167px;
+  top: 179px;
+
+}
+
+.G110 {
+  position: absolute;
+  padding-left: 199px;
+  top: 120px;
+
+}
+
+.G111 {
+  position: absolute;
+  padding-left: 213px;
+  top: 158px;
+
+}
+
+.G112 {
+  position: absolute;
+  padding-left: 232px;
+  top: 115px;
+
+}
+
+.G113 {
+  position: absolute;
+  padding-left: 257px;
+  top: 186px;
+
+}
+
+.G114 {
+  position: absolute;
+  padding-left: 305px;
+  top: 60px;
+
+}
+
+.G115 {
+  position: absolute;
+  padding-left: 299px;
+  top: 56px;
+
+}
+
+.G116 {
+  position: absolute;
+  padding-left: 327px;
+  top: 132px;
+
+}
+
+.G117 {
+  position: absolute;
+  padding-left: 357px;
+  top: 92px;
+
+}
+
+.G118 {
+  position: absolute;
+  padding-left: 376px;
+  top: 127px;
+
+}
+
+.G119 {
+  position: absolute;
+  padding-left: 398px;
+  top: 97px;
+
+}
+
+.G120 {
+  position: absolute;
+  padding-left: 430px;
+  top: 70px;
+
+}
+
+.G121 {
+  position: absolute;
+  padding-left: 281px;
+  top: 30px;
+
+}
+
+.G122 {
+  position: absolute;
+  padding-left: 289px;
+  top: 25px;
+  font-size: 10px;
+  color: white;
+
+}
+
+.G22 {
+  position: absolute;
+  top: 20px;
+  padding-left: 140px;
+}
+
+.G23 {
+  position: absolute;
+
+  padding-left: 155px;
+}
+
+.G24 {
+  position: absolute;
+  padding-left: 30px;
+  top: 15px;
+font-size: 30px;
+}
+
+.G25 {
+  position: absolute;
+  top: 60px;
+  width: 350px;
+  padding-left: 30px;
+}
+
+.G26 {
+  position: absolute;
+  top: 110px;
+  padding-left: 31px;
+}
+
+.G27 {
+  position: absolute;
+  top: 130px;
+  padding-left: 55px;
+}
+
+.G28 {
+  position: absolute;
+  top: 85px;
+  padding-left: 93px;
+}
+
+.G29 {
+  position: absolute;
+  top: 103px;
+  padding-left: 108px;
+}
+
+.G210 {
+  position: absolute;
+  top: 149px;
+  padding-left: 123px;
+}
+
+.G211 {
+  position: absolute;
+  top: 127px;
+  padding-left: 165px;
+}
+
+.G212 {
+  position: absolute;
+  top: 118px;
+  padding-left: 195px;
+}
+
+.G213 {
+  position: absolute;
+  top: 60px;
+  padding-left: 215px;
+}
+
+.G214 {
+  position: absolute;
+  top: 86px;
+  padding-left: 236px;
+}
+
+.G215 {
+  position: absolute;
+  top: 82px;
+  padding-left: 232px;
+}
+
+.G216 {
+  position: absolute;
+  top: 103px;
+  padding-left: 272px;
+}
+
+.G217 {
+  position: absolute;
+  top: 85px;
+  padding-left: 300px;
+}
+
+.G218 {
+  position: absolute;
+  top: 93px;
+  padding-left: 330px;
+}
+
+.G219 {
+  position: absolute;
+  top: 107px;
+  padding-left: 370px;
+}
+
+.G220 {
+  position: absolute;
+  top: 54px;
+  padding-left: 215px;
+}
+
+.G221 {
+  position: absolute;
+  top: 50px;
+  color: white;
+  font-size: 10px;
+  padding-left: 230px;
+}
+
+.G222 {
+  position: absolute;
+  top: 20px;
+  padding-left: 360px;
+}
+
+.G32 {
+  position: absolute;
+  top: 20px;
+  padding-left: 153px;
+
+}
+
+.G33 {
+  position: absolute;
+  padding-left: 165px;
+
+}
+
+.G34 {
+  position: absolute;
+  top: 15px;
+  padding-left: 40px;
+  font-size: 30px;
+}
+
+.G35 {
+  position: absolute;
+  top: 10px;
+  padding-left: 280px;
+
+}
+
+.G36 {
+  position: absolute;
+  top: 100px;
+  padding-left: 40px;
+
+}
+
+.G37 {
+  position: absolute;
+  top: 100px;
+  padding-left: 40px;
+
+}
+
+.G38 {
+  position: absolute;
+  top: 80px;
+  padding-left: 40px;
+
+}
+
+.G39 {
+  position: absolute;
+  top: 74px;
+  padding-left: 275px;
+
+}
+
+.G310 {
+  position: absolute;
+  top: 70px;
+  padding-left: 285px;
+font-size: 10px;
+  color: green;
+}
+
+.G311 {
+  position: absolute;
+  top: 150px;
+  padding-left: 40px;
+
+}
+
+.G312 {
+  position: absolute;
+  top: 150px;
+  padding-left: 40px;
+
+}
+
+.G313 {
+  position: absolute;
+  top: 130px;
+  padding-left: 40px;
+
+}
+
+.G314 {
+  position: absolute;
+  top: 126px;
+  padding-left: 275px;
+
+}
+
+.G315 {
+  position: absolute;
+  top: 122px;
+  font-size: 10px;
+  padding-left: 285px;
+color: blue;
+}
+
+.Graf1 {
+  position: absolute;
+  top: 135vh;
+  height: 26vh;
+  width: 500px;
+}
+
+.Graf2 {
+  position: absolute;
+  height: 26vh;
+  left: 580px;
+  top: 135vh;
+  width: 500px;
+}
+
+.Graf3 {
+  position: absolute;
+  top: 135vh;
+  height: 23vh;
+  left: 1040px;
+  width: 350px;
+}
+
+
+.Strafick {
+  top: 50vh;
+  position: relative;
+  height: 80vh;
+  width: 1400px;
+}
+
+.StrafickUp {
+
+  height: 8vh;
+}
+
+.Strafickline {
+  position: absolute;
+  padding-top: 50px;
+  width: 1400px;
+}
+
+.Straficktext {
+  position: absolute;
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+.StraficB1 {
+  position: absolute;
+  padding-top: 23px;
+  right: 140px;
+}
+
+.StraficB2 {
+  position: absolute;
+  padding-top: 23px;
+  right: 100px;
+}
+
+.StraficB3 {
+  position: absolute;
+  padding-top: 23px;
+  right: 55px;
+}
+
+.StrafickGraf {
+
+  width: 900px;
+  height: 90vh;
+}
+
+.StrafickM {
+  position: absolute;
+  padding-left: 40px;
+  padding-top: 65px;
+  height: 400px;
+}
+
+.StrafickMO {
+  position: absolute;
+  padding-left: 90px;
+  padding-top: 500px;
+  width: 750px;
+}
+
+.StrafickMG1 {
+  position: absolute;
+  padding-left: 110px;
+  padding-top: 150px;
+  height: 320px;
+}
+
+.StrafickMG2 {
+  position: absolute;
+  padding-left: 110px;
+  padding-top: 210px;
+  height: 261px;
+}
+
+.StrafickMGD1 {
+  position: absolute;
+  padding-left: 700px;
+  padding-top: 56px;
+
+}
+
+.StrafickMReturn {
+  position: absolute;
+  padding-left: 730px;
+  padding-top: 56px;
+  top: 40px;
+}
+
+.StrafickMGD2 {
+  position: absolute;
+  padding-left: 550px;
+  padding-top: 56px;
+
+}
+
+.StrafickMNew {
+  position: absolute;
+  padding-left: 580px;
+  padding-top: 56px;
+  top: 40px;
+}
+
+.StrafickMBM {
+  position: absolute;
+  padding-left: 150px;
+  padding-top: 50px;
+}
+
+.StrafickMBY {
+  position: absolute;
+  padding-left: 235px;
+  padding-top: 50px;
+}
+
+.StrafickMM {
+  position: absolute;
+  padding-left: 175px;
+  padding-top: 60px;
+  color: white;
+  text-decoration: none;
+}
+
+.StrafickMY {
+  position: absolute;
+  padding-left: 260px;
+  padding-top: 60px;
+  color: white;
+  text-decoration: none;
+}
+
+.StrafickGoogle {
+  position: absolute;
+  width: 500px;
+  height: 90vh;
+
+  margin-left: 860px;
+  top: 100px;
+}
+
+.StrafickG {
+  position: absolute;
+  padding-left: 70px;
+}
+.StraGG1 {
+  position: absolute;
+  font-size: 20px;
+  top: 60px;
+  padding-left: 145px;
+}
+.StraGG12 {
+  position: absolute;
+  font-size: 20px;
+  top: 90px;
+  padding-left: 165px;
+}
+.StraGG13 {
+  position: absolute;
+  font-size: 20px;
+  top: 300px;
+  padding-left: 30px;
+}
+.StraGG14 {
+  position: absolute;
+  font-size: 20px;
+  top: 300px;
+  padding-left: 80px;
+}
+.StraGG15 {
+  position: absolute;
+  font-size: 20px;
+  top: 300px;
+  padding-left: 200px;
+}
+.StraGG16 {
+  position: absolute;
+  font-size: 20px;
+  top: 300px;
+  padding-left: 330px;
+}
+.StraGG23 {
+  position: absolute;
+  font-size: 20px;
+  top: 380px;
+  padding-left: 30px;
+}
+.StraGG24 {
+  position: absolute;
+  font-size: 20px;
+  top: 380px;
+  padding-left: 80px;
+}
+.StraGG25 {
+  position: absolute;
+  font-size: 20px;
+  top: 380px;
+  padding-left: 200px;
+}
+.StraGG26 {
+  position: absolute;
+  font-size: 20px;
+  top: 380px;
+  padding-left: 330px;
+  color: green;
+}
+.StraGG33 {
+  position: absolute;
+  font-size: 20px;
+  top: 460px;
+  padding-left: 30px;
+}
+.StraGG34 {
+  position: absolute;
+  font-size: 20px;
+  top: 460px;
+  padding-left: 80px;
+}
+.StraGG35 {
+  position: absolute;
+  font-size: 20px;
+  top: 460px;
+  padding-left: 200px;
+}
+.StraGG36 {
+  position: absolute;
+  font-size: 20px;
+  top: 460px;
+  padding-left: 330px;
+  color: red;
+}
+.StraGG43 {
+  position: absolute;
+  font-size: 20px;
+  top: 540px;
+  padding-left: 30px;
+}
+.StraGG44 {
+  position: absolute;
+  font-size: 20px;
+  top: 540px;
+  padding-left: 80px;
+}
+.StraGG45 {
+  position: absolute;
+  font-size: 20px;
+  top: 540px;
+  padding-left: 200px;
+}
+.StraGG46 {
+  position: absolute;
+  font-size: 20px;
+  top: 540px;
+  padding-left: 330px;
+  color: green;
+}
+
+.StrafickDown {
+  position: absolute;
+  width: 800px;
+  height: 20vh;
+  margin-left: 60px;
+  top: 83vh;
+}
+
+.Strafick013 {
+  position: absolute;
+  padding-left: 80px;
+  font-size: 20px;
+
+}
+
+.Strafick01 {
+  position: absolute;
+  padding-left: 50px;
+top: 30px;
+
+}
+
+.Strafick011 {
+  position: absolute;
+  padding-left: 150px;
+  top: 50px;
+
+}
+
+.Strafick012 {
+  position: absolute;
+  padding-left: 170px;
+  top: 30px;
+  color: red;
+}
+
+.Strafick02 {
+  position: absolute;
+  padding-left: 400px;
+  font-size: 20px;
+}
+
+.Strafick021 {
+  position: absolute;
+  padding-left: 340px;
+  top: 30px;
+}
+
+.Strafick022 {
+  position: absolute;
+  padding-left: 480px;
+  top: 50px;
+}
+
+.Strafick023 {
+  position: absolute;
+  padding-left: 500px;
+  top: 30px;
+  color: green;
+}
+
+.Strafick03 {
+  position: absolute;
+  padding-left: 650px;
+font-size: 20px;
+}
+
+.Strafick031 {
+  position: absolute;
+  padding-left: 635px;
+  top: 30px;
+}
+
+.Strafick032 {
+  position: absolute;
+  padding-left: 710px;
+  top: 50px;
+}
+
+.Strafick033 {
+  position: absolute;
+  padding-left: 735px;
+  top: 30px;
+  color: green;
+}
+
+.HeaderPage {
+
+  position: relative;
+  height: 10vh;
+
+}
+
+.DashBOR {
+  position: absolute;
+  display: flow;
+  left: 30px;
+  padding-top: 20px;
+  font-size: 25px;
+}
+
+.DashB {
+
+  position: relative;
+  height: 130px;
+  opacity: 0.7;
+}
+
+.DashBD {
+  position: absolute;
+  display: flow;
+  margin-top: 20px;
+  left: 30px;
+
+  padding-top: 60px;
+}
+
+.ads {
+  padding-left: 10px;
+  padding-top: 5px;
+  display: flow;
+  position: absolute;
+
+
+}
+
+.PageDown {
+
+  position: relative;
+  height: 150vh;
+  top: 65vh;
+  width: 1400px;
+
+}
+
+.Sel1 {
+  position: absolute;
+  top: 31px;
+  left: 40px;
+  height: 170px;
+  width: 280px;
+
+}
+
+.S11 {
+  position: absolute;
+  padding-left: 180px;
+  top: 70px;
+}
+
+.S12 {
+  position: absolute;
+  padding-left: 180px;
+  top: 40px;
+}
+
+.S13 {
+  position: absolute;
+  padding-left: 60px;
+  bottom: 70px;
+}
+
+.S14 {
+  position: absolute;
+  padding-left: 70px;
+  bottom: 70px;
+}
+
+.S15 {
+  position: absolute;
+  padding-left: 80px;
+  bottom: 70px;
+}
+
+.S16 {
+  position: absolute;
+  padding-left: 90px;
+  bottom: 70px;
+}
+
+.S17 {
+  position: absolute;
+  padding-left: 100px;
+  bottom: 70px;
+}
+
+.S18 {
+  position: absolute;
+  padding-left: 110px;
+  bottom: 70px;
+}
+
+.S19 {
+  position: absolute;
+  padding-left: 120px;
+  bottom: 70px;
+}
+
+.S110 {
+  position: absolute;
+  padding-left: 130px;
+  bottom: 70px;
+}
+
+.S111 {
+  position: absolute;
+  padding-left: 140px;
+  bottom: 70px;
+}
+
+.Sel2 {
+  position: absolute;
+  top: 31px;
+  left: 340px;
+  height: 370px;
+  width: 330px;
+
+}
+
+.S21 {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+}
+
+.S22 {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+}
+
+.S28 {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+.S23 {
+  position: absolute;
+  bottom: 30px;
+  right: 45px;
+}
+
+.S24 {
+  position: absolute;
+  bottom: 30px;
+  right: 60px;
+}
+
+.S25 {
+  position: absolute;
+  bottom: 30px;
+  right: 75px;
+}
+
+.S26 {
+  position: absolute;
+  bottom: 30px;
+  right: 90px;
+}
+
+.S27 {
+  position: absolute;
+  bottom: 30px;
+  right: 105px;
+}
+
+.S29 {
+  position: absolute;
+  bottom: 30px;
+  right: 120px;
+}
+
+.S210 {
+  position: absolute;
+  bottom: 30px;
+  right: 135px;
+}
+
+.S211 {
+  position: absolute;
+  bottom: 30px;
+  right: 150px;
+}
+
+.S212 {
+  position: absolute;
+  bottom: 30px;
+  right: 165px;
+}
+
+.Sel3 {
+  position: absolute;
+  top: 31px;
+  left: 710px;
+  height: 170px;
+  width: 300px;
+}
+
+.S31 {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+}
+
+.S32 {
+  position: absolute;
+  top: 90px;
+  right: 20px;
+}
+
+.S33 {
+  position: absolute;
+  top: 50px;
+  left: 35px;
+}
+
+.S34 {
+  position: absolute;
+  top: 98px;
+  left: 35px;
+}
+
+.S35 {
+  position: absolute;
+  top: 80px;
+  left: 128px;
+}
+
+.Sel4 {
+  position: absolute;
+  top: 31px;
+  left: 1030px;
+  height: 370px;
+  width: 330px;
+}
+
+.S41 {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+}
+
+.S42 {
+  position: absolute;
+  top: 140px;
+  left: 30px;
+}
+
+.S43 {
+  position: absolute;
+  bottom: 60px;
+  left: 120px;
+}
+
+.S44 {
+  position: absolute;
+  bottom: 60px;
+  left: 120px;
+}
+
+.S45 {
+  position: absolute;
+  bottom: 60px;
+  left: 120px;
+}
+
+.S46 {
+  position: absolute;
+  bottom: 60px;
+  right: 45px;
+}
+
+.S47 {
+  position: absolute;
+  bottom: 157px;
+  right: 62px;
+}
+
+.S48 {
+  position: absolute;
+  bottom: 218px;
+  right: 87px;
+}
+
+.Sel5 {
+  position: absolute;
+  top: 245px;
+  left: 37px;
+  height: 170px;
+  width: 280px;
+}
+
+.S51 {
+  position: absolute;
+  right: 30px;
+  top: 50px;
+}
+
+.S52 {
+  position: absolute;
+  right: 30px;
+  top: 90px;
+}
+
+.S53 {
+  position: absolute;
+  left: 60px;
+  top: 30px;
+  width: 90px;
+  height: 90px;
+}
+
+.Sel6 {
+  position: absolute;
+  top: 245px;
+  left: 710px;
+  height: 170px;
+  width: 300px;
+}
+
+.S61 {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+}
+
+.S62 {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+}
+
+.S63 {
+  position: absolute;
+  bottom: 90px;
+  left: 65px;
+}
+
+.S64 {
+  position: absolute;
+  bottom: 90px;
+  left: 75px;
+}
+
+.S65 {
+  position: absolute;
+  bottom: 90px;
+  left: 85px;
+}
+
+.S66 {
+  position: absolute;
+  bottom: 90px;
+  left: 95px;
+}
+
+.S67 {
+  position: absolute;
+  bottom: 90px;
+  left: 105px;
+}
+
+.S68 {
+  position: absolute;
+  bottom: 90px;
+  left: 115px;
+}
+
+.S69 {
+  position: absolute;
+  bottom: 90px;
+  left: 125px;
+}
+
+.S610 {
+  position: absolute;
+  bottom: 90px;
+  left: 135px;
+
+}
+
+.S611 {
+  position: absolute;
+  bottom: 90px;
+  left: 145px;
+}
+
+.PageDownBack {
+
+  position: relative;
+  height: 150vh;
+  width: 1400px;
+
+}
+
+.Profil {
+  position: absolute;
+  bottom: 100px;
+  left: 30px;
+  height: 600px;
+  width: 450px;
+}
+
+.P1 {
+  position: absolute;
+  left: 143px;
+  top: 70px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: url(/img/variant-26-235.png) no-repeat 23px;
+}
+
+.P2 {
+  position: absolute;
+  top: 325px;
+  padding-left: 100px;
+  font-size: 25px;
+}
+
+.P3 {
+  position: absolute;
+  top: 370px;
+  padding-left: 150px;
+  opacity: 0.7;
+}
+
+.P4 {
+  position: absolute;
+  top: 400px;
+  padding-left: 70px;
+  text-align: center;
+}
+
+.P5 {
+  position: absolute;
+  top: 540px;
+  padding-left: 50px;
+  text-align: center;
+}
+
+.P6 {
+  position: absolute;
+  top: 540px;
+  padding-left: 200px;
+  text-align: center;
+}
+
+.P7 {
+  position: absolute;
+  top: 540px;
+  padding-left: 350px;
+  text-align: center;
+}
+
+.ToDo {
+  position: absolute;
+  bottom: 100px;
+  left: 490px;
+  height: 600px;
+  width: 450px;
+}
+
+.TD {
+  position: absolute;
+  padding-left: 30px;
+  top: 20px;
+  font-size: 30px;
+}
+.TD01 {
+  position: absolute;
+  top: 170px;
+  padding-left: 100px;
+}
+.TD02 {
+  position: absolute;
+  top: 220px;
+  padding-left: 100px;
+}
+.TD03 {
+  position: absolute;
+  top: 270px;
+  padding-left: 100px;
+}
+.TD04 {
+  position: absolute;
+  top: 320px;
+  padding-left: 100px;
+}
+.TD05 {
+  position: absolute;
+  top: 370px;
+  padding-left: 100px;
+}
+.TD06 {
+   position: absolute;
+   top: 420px;
+   padding-left: 100px;
+ }
+
+
+.TD2 {
+  position: absolute;
+  right: 100px;
+  top: 230px;
+}
+
+.TD3 {
+  position: absolute;
+  right: 110px;
+  top: 232px;
+  font-size: 10px;
+  color: white;
+}
+
+.TD4 {
+  position: absolute;
+  right: 100px;
+  top: 330px;
+}
+
+.TD5 {
+  position: absolute;
+  right: 110px;
+  top: 332px;
+  font-size: 10px;
+  color: white;
+}
+
+.TD6 {
+  position: absolute;
+  padding-left: 60px;
+  top: 182px;
+}
+
+.TD7 {
+  position: absolute;
+  padding-left: 60px;
+  top: 232px;
+}
+
+.TD8 {
+  position: absolute;
+  padding-left: 60px;
+  top: 282px;
+}
+
+.TD9 {
+  position: absolute;
+  padding-left: 60px;
+  top: 332px;
+}
+
+.TD10 {
+  position: absolute;
+  padding-left: 60px;
+  top: 382px;
+}
+
+.TD11 {
+  position: absolute;
+  padding-left: 60px;
+  top: 432px;
+}
+
+.TD12 {
+  position: absolute;
+  padding-left: 66px;
+  top: 188px;
+}
+
+.TD13 {
+  position: absolute;
+  padding-left: 66px;
+  top: 290px;
+}
+
+.Messages {
+  position: absolute;
+  bottom: 100px;
+  left: 950px;
+  height: 600px;
+  width: 450px;
+}
+
+.M00 {
+  position: absolute;
+  top: 20px;
+  padding-left: 30px;
+  font-size: 20px;
+}
+
+.M11 {
+  position: absolute;
+  top: 100px;
+  left: 23px;
+
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: url(/img/variant-26-253.png) no-repeat;
+}
+
+.M12 {
+  position: absolute;
+  top: 112px;
+  padding-left: 70px;
+}
+
+.M13 {
+  position: absolute;
+  top: 100px;
+  padding-left: 110px;
+}
+
+.M14 {
+  position: absolute;
+  top: 125px;
+  padding-left: 110px;
+  font-size: 13px;
+}
+
+.M15 {
+  position: absolute;
+  top: 100px;
+  right: 70px;
+  font-size: 12px;
+}
+
+.M21 {
+  position: absolute;
+  top: 220px;
+  left: 23px;
+  border-radius: 50%;
+  background: url(/img/variant-26-261.png) no-repeat -30px 1px;
+  height: 60px;
+  width: 60px;
+}
+
+.M22 {
+  position: absolute;
+  top: 222px;
+  padding-left: 70px;
+}
+
+.M23 {
+  position: absolute;
+  top: 220px;
+  padding-left: 110px;
+}
+
+.M24 {
+  position: absolute;
+  top: 245px;
+  padding-left: 110px;
+  font-size: 13px;
+}
+
+.M25 {
+  position: absolute;
+  top: 220px;
+  right: 70px;
+  font-size: 12px;
+}
+
+.M31 {
+  position: absolute;
+  top: 350px;
+  left: 23px;
+  border-radius: 50%;
+  background: url(/img/variant-26-269.png) no-repeat -33px;
+  height: 60px;
+  width: 60px;
+}
+
+.M32 {
+  position: absolute;
+  top: 352px;
+  padding-left: 70px;
+}
+
+.M33 {
+  position: absolute;
+  top: 340px;
+  padding-left: 110px;
+}
+
+.M34 {
+  position: absolute;
+  top: 365px;
+  padding-left: 110px;
+  font-size: 13px;
+}
+
+.M35 {
+  position: absolute;
+  top: 340px;
+  right: 70px;
+  font-size: 12px;
+}
+
+.M41 {
+  position: absolute;
+  top: 470px;
+  left: 23px;
+  border-radius: 50%;
+  background: url(/img/variant-26-277.png) no-repeat -12px;
+  height: 60px;
+  width: 60px;
+}
+
+.M42 {
+  position: absolute;
+  top: 472px;
+  padding-left: 70px;
+}
+
+.M43 {
+  position: absolute;
+  top: 460px;
+  padding-left: 110px;
+}
+
+.M44 {
+  position: absolute;
+  top: 485px;
+  padding-left: 110px;
+  font-size: 13px;
+}
+
+.M45 {
+  position: absolute;
+  top: 460px;
+  right: 70px;
+  font-size: 12px;
+}
+
+.PageDownDown {
+  position: absolute;
+  height: 30px;
+  width: 1400px;
+}
+
+.PDD1 {
+  position: absolute;
+  top: 5px;
+  padding-left: 30px;
+  text-align: right;
+}
+
+.PDD2 {
+  position: absolute;
+  top: 5px;
+  right: 80px;
+}
+
+.Profes1 {
+  padding-left: 20px;
+}
+
+.MenuS {
+  height: 45px;
+  width: 80px;
+  background-color: black;
+  margin-top: 60px;
+
+}
+
+.Main {
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.Main1 {
+
+  padding-left: 8px;
+  padding-top: 40px;
+}
+
+.Comp {
+  align-items: center;
+
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+.Comp1 {
+  position: relative;
+  padding-top: 40px;
+  padding-left: 8px;
+}
+
+.Comp121 {
+  margin-bottom: 20px;
+}
+
+.Comp11 {
+
+  position: absolute;
+}
+
+.Comp12 {
+  padding-left: 5px;
+  padding-top: 5px;
+  position: absolute;
+}
+
+.Comp13 {
+  padding-top: 8px;
+  padding-left: 8px;
+  position: absolute;
+
+}
+
+.Data1 {
+  padding-top: 40px;
+  padding-left: 10px;
+}
+
+.Pages1 {
+  padding-top: 40px;
+  padding-left: 10px;
+}
+
+.Data {
+  align-items: center;
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+.Pages {
+  align-items: center;
+  display: flow;
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+.Map {
+
+  position: relative;
+  align-items: center;
+  height: 130px;
+  display: unset;
+
+}
+
+.MapSize {
+  position: relative;
+  padding-left: 25px;
+}
+
+.Mapplus {
+  position: absolute;
+  left: 36px;
+  padding-top: 13px;
+}
+
+.Mapmin {
+  position: absolute;
+  left: 36px;
+  padding-top: 58px;
+}
+
+.MapImg {
+  padding-left: 120px;
+
+}
+
+.Mapline {
+  position: absolute;
+  left: 24px;
+  padding-top: 38px;
+}
+
+
+span {
+}

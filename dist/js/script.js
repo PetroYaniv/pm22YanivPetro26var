@@ -1,0 +1,1 @@
+var x;let y,z=(x=5)+(y=6);console.log("Hello"),console.log(z);
