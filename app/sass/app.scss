@@ -15,6 +15,7 @@ body {
 
 
 
+
 .sidebar {
   background-color: #333333;
   min-height: 422vh;
@@ -491,9 +492,9 @@ body {
 
 .G15 {
   position: absolute;
-  padding-left: 70px;
-  top: 62px;
-  width: 370px;
+  padding-left: 30px;
+  top: 32px;
+  width: 420px;
 }
 
 .G16 {
@@ -638,9 +639,9 @@ font-size: 30px;
 
 .G25 {
   position: absolute;
-  top: 60px;
-  width: 350px;
-  padding-left: 30px;
+  top: 50px;
+  width: 400px;
+
 }
 
 .G26 {
@@ -797,15 +798,15 @@ font-size: 30px;
 
 .G39 {
   position: absolute;
-  top: 74px;
-  padding-left: 275px;
+  top: 115px;
+  padding-left: 360px;
 
 }
 
 .G310 {
   position: absolute;
-  top: 70px;
-  padding-left: 285px;
+  top: 111px;
+  padding-left: 370px;
 font-size: 10px;
   color: green;
 }
@@ -823,26 +824,43 @@ font-size: 10px;
   padding-left: 40px;
 
 }
-
+#Butm {
+  position: absolute;
+  height: 40px;
+  color: white;
+  width: 80px;
+  background: blue;
+  left: 20px;
+  border-radius: 20%;
+}
+#Buty {
+  position: absolute;
+  left: 100px;
+  height: 40px;
+  color: white;
+  width: 80px;
+  background: #5656ec;
+  border-radius: 20%;
+}
 .G313 {
   position: absolute;
-  top: 130px;
+  top: 160px;
   padding-left: 40px;
 
 }
 
 .G314 {
   position: absolute;
-  top: 126px;
-  padding-left: 275px;
+  top: 194px;
+  padding-left: 360px;
 
 }
 
 .G315 {
   position: absolute;
-  top: 122px;
+  top: 192px;
   font-size: 10px;
-  padding-left: 285px;
+  padding-left: 370px;
 color: blue;
 }
 
@@ -913,83 +931,34 @@ color: blue;
 }
 
 .StrafickGraf {
+ // oveflow: hidden;
 
-  width: 900px;
+  canvas {
+    max-height: 100%!important;
+  }
+  padding-top: 80px;
+  width: 800px;
   height: 90vh;
 }
 
-.StrafickM {
-  position: absolute;
-  padding-left: 40px;
-  padding-top: 65px;
-  height: 400px;
-}
 
-.StrafickMO {
-  position: absolute;
-  padding-left: 90px;
-  padding-top: 500px;
-  width: 750px;
-}
-
-.StrafickMG1 {
-  position: absolute;
-  padding-left: 110px;
-  padding-top: 150px;
-  height: 320px;
-}
-
-.StrafickMG2 {
-  position: absolute;
-  padding-left: 110px;
-  padding-top: 210px;
-  height: 261px;
-}
-
-.StrafickMGD1 {
-  position: absolute;
-  padding-left: 700px;
-  padding-top: 56px;
-
-}
-
-.StrafickMReturn {
-  position: absolute;
-  padding-left: 730px;
-  padding-top: 56px;
-  top: 40px;
-}
-
-.StrafickMGD2 {
-  position: absolute;
-  padding-left: 550px;
-  padding-top: 56px;
-
-}
-
-.StrafickMNew {
-  position: absolute;
-  padding-left: 580px;
-  padding-top: 56px;
-  top: 40px;
-}
 
 .StrafickMBM {
   position: absolute;
   padding-left: 150px;
-  padding-top: 50px;
+  bottom: 400px;
 }
 
 .StrafickMBY {
   position: absolute;
   padding-left: 235px;
-  padding-top: 50px;
+  bottom: 400px;
 }
 
 .StrafickMM {
   position: absolute;
   padding-left: 175px;
-  padding-top: 60px;
+  bottom: 410px;
   color: white;
   text-decoration: none;
 }
@@ -997,7 +966,7 @@ color: blue;
 .StrafickMY {
   position: absolute;
   padding-left: 260px;
-  padding-top: 60px;
+  bottom: 410px;
   color: white;
   text-decoration: none;
 }
@@ -1018,14 +987,14 @@ color: blue;
 .StraGG1 {
   position: absolute;
   font-size: 20px;
-  top: 60px;
-  padding-left: 145px;
+  top: 120px;
+  padding-left: 185px;
 }
 .StraGG12 {
   position: absolute;
   font-size: 20px;
-  top: 90px;
-  padding-left: 165px;
+  top: 150px;
+  padding-left: 200px;
 }
 .StraGG13 {
   position: absolute;
@@ -1285,8 +1254,9 @@ font-size: 20px;
 
 .S13 {
   position: absolute;
-  padding-left: 60px;
-  bottom: 70px;
+  height: 75px;
+  width: 150px;
+  bottom: 40px;
 }
 
 .S14 {
@@ -1343,18 +1313,24 @@ font-size: 20px;
   left: 340px;
   height: 370px;
   width: 330px;
-
+  display: flex;
 }
-
-.S21 {
+.Sel2p {
   position: absolute;
-  top: 50px;
+  padding-left: 30px;
+  padding-top: 40px;
+  height: 370px;
+  width: 100px;
+}
+.S21 {
+
+  top: 40px;
   left: 30px;
 }
 
 .S22 {
-  position: absolute;
-  top: 150px;
+
+  margin-top: 40px;
   left: 30px;
 }
 
@@ -1365,9 +1341,7 @@ font-size: 20px;
 }
 
 .S23 {
-  position: absolute;
-  bottom: 30px;
-  right: 45px;
+  padding-top: 50px;
 }
 
 .S24 {
@@ -1440,8 +1414,10 @@ font-size: 20px;
 
 .S33 {
   position: absolute;
-  top: 50px;
-  left: 35px;
+  right: 100px;
+  width: 200px;
+  padding-top: 50px;
+  height: 150px;
 }
 
 .S34 {
@@ -1462,24 +1438,28 @@ font-size: 20px;
   left: 1030px;
   height: 370px;
   width: 330px;
+  display: flow;
 }
 
-.S41 {
+.Sel4p {
   position: absolute;
-  top: 40px;
-  left: 30px;
+  display: flow;
+  margin-top: 40px;
+  margin-left: 30px;
 }
 
 .S42 {
-  position: absolute;
-  top: 140px;
-  left: 30px;
+
+  margin-top: 30px;
+
 }
 
 .S43 {
-  position: absolute;
-  bottom: 60px;
-  left: 120px;
+position: absolute;
+  bottom: 30px;
+  left: 100px;
+  height: 300px;
+  width: 250px;
 }
 
 .S44 {
@@ -1534,10 +1514,10 @@ font-size: 20px;
 
 .S53 {
   position: absolute;
-  left: 60px;
-  top: 30px;
-  width: 90px;
-  height: 90px;
+  padding-left: 50px;
+  bottom: 30px;
+  width: 100px;
+  height: 100px;
 }
 
 .Sel6 {
@@ -1562,8 +1542,8 @@ font-size: 20px;
 
 .S63 {
   position: absolute;
-  bottom: 90px;
-  left: 65px;
+width: 200px;
+  top:30px;
 }
 
 .S64 {

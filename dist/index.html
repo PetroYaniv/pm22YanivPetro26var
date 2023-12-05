@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
+
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="/css/style.min.css">
     <title>My page</title>
 
@@ -288,24 +290,10 @@
             <img src="/img/variant-26-62.png" class="G12">
             <p class="G13">6.31%</p>
             <p class="G14"><b>345</b></p>
-            <img src="/img/variant-26-65.png" class="G15">
-            <img src="/img/variant-26-66.png" class="G16">
-            <img src="/img/variant-26-67.png" class="G17">
-            <img src="/img/variant-26-68.png" class="G18">
-            <img src="/img/variant-26-69.png" class="G19">
-            <img src="/img/variant-26-70.png" class="G110">
-            <img src="/img/variant-26-71.png" class="G111">
-            <img src="/img/variant-26-72.png" class="G112">
-            <img src="/img/variant-26-73.png" class="G113">
-            <img src="/img/variant-26-74.png" class="G114">
-            <img src="/img/variant-26-75.png" class="G115">
-            <img src="/img/variant-26-76.png" class="G116">
-            <img src="/img/variant-26-77.png" class="G117">
-            <img src="/img/variant-26-78.png" class="G118">
-            <img src="/img/variant-26-79.png" class="G119">
-            <img src="/img/variant-26-80.png" class="G120">
-            <img src="/img/variant-26-81.png" class="G121">
-            <p class="G122">Orders:12</p>
+            <div class="G15">
+                <canvas id="Graf01"></canvas>
+            </div>
+
             <a href="#" class="G123">
             <img src="/img/variant-26-83.png">
             </a>
@@ -315,23 +303,10 @@
             <img src="/img/variant-26-85.png" class="G22">
             <p class="G23">1.4%</p>
             <p class="G24"><b>$25.534</b></p>
-            <img src="/img/variant-26-88.png" class="G25">
-            <img src="/img/variant-26-89.png" class="G26">
-            <img src="/img/variant-26-90.png" class="G27">
-            <img src="/img/variant-26-91.png" class="G28">
-            <img src="/img/variant-26-92.png" class="G29">
-            <img src="/img/variant-26-93.png" class="G210">
-            <img src="/img/variant-26-94.png" class="G211">
-            <img src="/img/variant-26-95.png" class="G212">
-            <img src="/img/variant-26-96.png" class="G213">
-            <img src="/img/variant-26-97.png" class="G214">
-            <img src="/img/variant-26-98.png" class="G215">
-            <img src="/img/variant-26-99.png" class="G216">
-            <img src="/img/variant-26-100.png" class="G217">
-            <img src="/img/variant-26-101.png" class="G218">
-            <img src="/img/variant-26-102.png" class="G219">
-            <img src="/img/variant-26-103.png" class="G220">
-            <p class="G221">$3.874</p>
+            <div class="G25">
+                <canvas id="Graf02"></canvas>
+            </div>
+
             <a href="#" class="G222">
             <img src="/img/variant-26-105.png">
             </a>
@@ -345,17 +320,15 @@
             <a href="#" class="G35">
                 <img src="/img/variant-26-110.png">
             </a>
-            <img src="/img/variant-26-111.png" class="G36">
-            <img src="/img/variant-26-112.png" class="G37">
-            <img src="/img/variant-26-113.png" class="G38">
+            <div class="G36">
+                <canvas id="Graf03"></canvas>
+            </div>
+            <p class="G38">Today</p>
+            <p class="G313">Yesterday</p>
             <img src="/img/variant-26-114.png" class="G39">
-            <p class="G310">67%</p>
-            <img src="/img/variant-26-116.png" class="G311">
-            <img src="/img/variant-26-117.png" class="G312">
-            <img src="/img/variant-26-118.png" class="G313">
             <img src="/img/variant-26-119.png" class="G314">
-            <p class="G315">78%</p>
-
+            <p class="G310">67%</p>
+            <p class="G315">79%</p>
         </div>
 </div>
     <div class="Strafick">
@@ -373,25 +346,15 @@
             </a>
         </div>
         <div class="StrafickGraf">
-            <img src="/img/variant-26-137.png" class="StrafickM">
-            <img src="/img/variant-26-138.png" class="StrafickMO">
-            <img src="/img/variant-26-139.png" class="StrafickMG1">
-            <img src="/img/variant-26-140.png" class="StrafickMG2">
-            <img src="/img/variant-26-141.png" class="StrafickMGD1">
-            <p class="StrafickMReturn">Return Visitor</p>
-            <img src="/img/variant-26-143.png" class="StrafickMGD2">
-            <p class="StrafickMNew">New Visitor</p>
-            <img src="/img/variant-26-145.png" class="StrafickMBM">
-            <img src="/img/variant-26-146.png" class="StrafickMBY">
-            <a href="#" class="StrafickMM">
-                Month
-            </a>
-            <a href="#" class="StrafickMY">
-                Year
-            </a>
+            <button id="Buty">Month</button>
+            <button id="Butm">Year</button>
+            <canvas id="myChart" ></canvas>
+
         </div>
         <div class="StrafickGoogle">
-            <img src="/img/variant-26-001.png" class="StrafickG">
+            <div class="StrafickG">
+                <canvas id="StrafickG01"></canvas>
+            </div>
             <p class="StraGG1"><b>Chrome</b></p>
             <p class="StraGG12">56%</p>
             <p class="StraGG13"><b>#</b></p>
@@ -436,66 +399,51 @@
         <div class="Sel1">
             <p class="S11"><b>45.002</b></p>
             <p class="S12">Sales</p>
-            <img src="/img/variant-26-168.png" class="S13">
-            <img src="/img/variant-26-169.png" class="S14">
-            <img src="/img/variant-26-170.png" class="S15">
-            <img src="/img/variant-26-171.png" class="S16">
-            <img src="/img/variant-26-172.png" class="S17">
-            <img src="/img/variant-26-173.png" class="S18">
-            <img src="/img/variant-26-174.png" class="S19">
-            <img src="/img/variant-26-175.png" class="S110">
-            <img src="/img/variant-26-176.png" class="S111">
+            <div class="S13">
+                <canvas id="Sel01"></canvas>
+            </div>
 
 
         </div>
-        <div class="Sel2">
-            <p class="S21">Indonesia,<br>Jakarta</p>
-            <p class="S22"><b>1,230,000<br>USD</b></p>
-            <img src="/img/variant-26-186.png" class="S23">
-            <img src="/img/variant-26-187.png" class="S24">
-            <img src="/img/variant-26-188.png" class="S25">
-            <img src="/img/variant-26-189.png" class="S26">
-            <img src="/img/variant-26-190.png" class="S27">
-            <img src="/img/variant-26-191.png" class="S28">
-            <img src="/img/variant-26-192.png" class="S29">
-            <img src="/img/variant-26-193.png" class="S210">
-            <img src="/img/variant-26-194.png" class="S211">
-            <img src="/img/variant-26-195.png" class="S212">
+        <div class="Sel2 d-flex">
+            <div class="Sel2p">
+                <p class="S21">Indonesia,<br>Jakarta</p>
+                <p class="S22"><b>1,230,000<br>USD</b></p>
+            </div>
+            <div class="S23">
+                <canvas id="Sel02" height="390" style="padding-left: 90px;padding-top: 10px ;padding-bottom: 20px"></canvas>
+            </div>
         </div>
+
         <div class="Sel3">
             <p class="S31"><b>342.343</b></p>
             <p class="S32">Clicks</p>
-            <img src="/img/variant-26-199.png" class="S33">
-            <img src="/img/variant-26-200.png" class="S34">
-            <img src="/img/variant-26-201.png" class="S35">
+            <div class="S33">
+                <canvas id="Sel03"></canvas>
+            </div>
         </div>
-        <div class="Sel4">
+        <div class="Sel4 d-flex">
+            <div class=" Sel4p">
             <p class="S41">Total<br>Sales</p>
             <p class="S42"><b>1,600,000<br>USD</b></p>
-            <img src="/img/variant-26-217.png" class="S43">
-            <img src="/img/variant-26-218.png" class="S44">
-            <img src="/img/variant-26-219.png" class="S45">
-            <img src="/img/variant-26-220.png" class="S46">
-            <img src="/img/variant-26-221.png" class="S47">
-            <img src="/img/variant-26-222.png" class="S48">
+            </div>
+            <div class="S43">
+                <canvas id="Sel04" height="325px" ></canvas>
+            </div>
         </div>
         <div class="Sel5">
             <p class="S51"><b>18% Total</b></p>
             <p class="S52">Visitors</p>
-            <img src="/img/S53.jpg" class="S53">
+            <div class="S53">
+                <canvas id="Sel05"></canvas>
+            </div>
         </div>
         <div class="Sel6">
             <p class="S61"><b>642.543</b></p>
             <p class="S62">Views</p>
-            <img src="/img/variant-26-205.png" class="S63">
-            <img src="/img/variant-26-206.png" class="S64">
-            <img src="/img/variant-26-207.png" class="S65">
-            <img src="/img/variant-26-208.png" class="S66">
-            <img src="/img/variant-26-209.png" class="S67">
-            <img src="/img/variant-26-210.png" class="S68">
-            <img src="/img/variant-26-211.png" class="S69">
-            <img src="/img/variant-26-212.png" class="S610">
-            <img src="/img/variant-26-213.png" class="S611">
+            <div class="S63">
+                <canvas id="Sel06"></canvas>
+            </div>
         </div>
         <div class="Profil">
 
@@ -566,6 +514,7 @@
             <a href="#" class="M31"style="object-fit: contain;">
 
             </a>
+            <img src="/img/variant-26-271.png" class="M32">
             <p class="M33"><b>Muing Siswoyo</b></p>
             <p class="M34">Just Design new Dribbble</p>
             <p class="M35">04:10 PM</p>
@@ -585,5 +534,14 @@
     </div>
 </div>
 </div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/js/libs.js"></script>
+<script src="/js/script.js"></script>
 </body>
+
 </html>
