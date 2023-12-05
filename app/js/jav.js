@@ -1,17 +1,17 @@
-function getChartData(s) {
+function getChartData(ss) {
     $("#loadingMessage").html("");
     $.ajax({
         url: "/js/data.json",
         success: function (result) {
             $(".StrafickGraf").html("");
-            if(s=="m") {
+            if(ss == "m") {
                 const chartdata = [];
                 chartdata.push(result.FirstGrafdata);
                 const clabels = [];
                     clabels.push(result.labelsmonth);
                 renderchart(chartdata, clabels);
             }
-            if(s=="y") {
+            if(ss == "y") {
                 const chartdata = [];
                 chartdata.push(result.SecondGrafdata);
                 const clabels = [];
@@ -20,7 +20,7 @@ function getChartData(s) {
             }
         },
         error: function (err) {
-            $(".StrafickGraf").html("Error");
+            $(".StrafickGraf").html("Error  "+ss);
         }
     });
 }
@@ -102,6 +102,30 @@ function renderchart(chartdata,clabels) {
     });
 }
 
+var area = document.getElementById("StrafickG01").getContext("2d");
+var urChart = new Chart(area, {
+    type: 'doughnut',
+    data: {
+        labels: [30],
+        datasets: [{
+            data: [100],
+            backgroundColor: [
+                'rgb(155,155,155)',
+                'rgb(94,101,187)',
+                'rgb(2,9,91)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+
+        plugins: {
+            legend: {
+                display: false,
+            }
+        }
+    }
+})
 var area = document.getElementById("Graf01").getContext("2d");
 var urChart = new Chart(area, {
     type: 'line',
@@ -452,28 +476,4 @@ var urChart = new Chart(area, {
         }
     }
 
-})
-var area = document.getElementById("StrafickG01").getContext("2d");
-var urChart = new Chart(area, {
-    type: 'doughnut',
-    data: {
-        labels: [1,2,3],
-        datasets: [{
-            data:[30,30,40],
-            backgroundColor: [
-                'rgb(155,155,155)',
-                'rgb(94,101,187)',
-                'rgb(2,9,91)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-
-        plugins: {
-            legend: {
-                display: false,
-            }
-        }
-    }
 })

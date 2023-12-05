@@ -38,7 +38,6 @@ function task_scss(){
 exports.sass = task_scss
 function task_data(){
     return src("app/js/*.json")
-//        .pipe(uglify())
         .pipe(dest("dist/js"));
 
 }
