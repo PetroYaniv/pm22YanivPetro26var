@@ -1,5 +1,5 @@
 {
-  "mychartdatamonth": {
+
     "labelsmonth": [
       "Jan",
       "Feb",
@@ -27,12 +27,22 @@
       2,
       1,
       2.5
-    ]
+    ],
+    "SecondGrafdata": [
+      0,
+      2,
+      3.4,
+      4,
+      2,
+      1,
+      2.7,
+      3,
+      5,
+      2,
+      2,
+      1.6
 
-  }
-},
-{
-  "mychartdatayear": {
+    ],
     "labelsyear": [
       2005,
       2006,
@@ -47,31 +57,42 @@
       2015,
       2016
     ],
-"SecondGrafdata": [
-0,
-2,
-3.4,
-4,
-2,
-1,
-2.7,
-3,5,
-2,2,
-1.6,
-1,4,
-2
-]
-  },
-  {
-  "mychartdatayear": {
-  "labelgraf": [
-        "Google",
-        "Safari",
-        "Firefox"
-],
-"Grafdata": [
-        30,
-        40,
-        30
-]
+    "FirstGrafdatayear": [
+      1,
+      4,
+      3.2,
+      2,
+      13,
+      2,
+      5,
+      4,
+      2,
+      2.5,
+      1.9,
+      2
+    ],
+    "SecondGrafdatayear": [
+      2,
+      3,
+      4,
+      3,
+      2,
+      1,
+      1.7,
+      3.4,
+      4.5,
+      2.2,
+      2.4,
+      1
+
+    ],
+    "Grafdata": [
+      30,
+      40,
+      30
+    ]
+
+
 }
+
+

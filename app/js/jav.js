@@ -1,53 +1,74 @@
-function getChartData(ss) {
-    $("#loadingMessage").html("");
+let char;
+
+function getChartData(s) {
     $.ajax({
         url: "/js/data.json",
         success: function (result) {
-            $(".StrafickGraf").html("");
-            if(ss == "m") {
-                const chartdata = [];
-                chartdata.push(result.FirstGrafdata);
-                const clabels = [];
-                    clabels.push(result.labelsmonth);
-                renderchart(chartdata, clabels);
+
+            if(s=="m") {
+
+                let datafirst = result.FirstGrafdata;
+                let datasecond = result.SecondGrafdata;
+                let labeldata = result.labelsmonth;
+                grafup(labeldata,datafirst,datasecond);
+
             }
-            if(ss == "y") {
-                const chartdata = [];
-                chartdata.push(result.SecondGrafdata);
-                const clabels = [];
-                clabels.push(result.labelsyear);
-                renderchart(chartdata, clabels);
+            else{
+
+                let datafirst = result.FirstGrafdatayear;
+                let datasecond = result.SecondGrafdatayear;
+                let labeldata = result.labelsyear;
+                grafup(labeldata,datafirst,datasecond);
             }
+
+
+
         },
         error: function (err) {
-            $(".StrafickGraf").html("Error  "+ss);
+            $(".StrafickGraf").html("Error");
         }
     });
 }
+
 $("#Butm").click(
+
     function () {
         getChartData("m");
     }
 );
 $("#Buty").click(
+
     function () {
         getChartData("y");
     }
 );
-function renderchart(chartdata,clabels) {
-    getChartData();
-    var area = document.getElementById("myChart").getContext("2d");
-    var urChart = new Chart(area, {
+
+getChartData("m")
+
+const ctx = document.getElementById("myChart").getContext("2d");
+function grafup(labelsmoy, firstgrafdata, secondgrafdata) {
+
+    if(char) {
+        char.destroy();
+        createchart(labelsmoy, firstgrafdata, secondgrafdata)
+    }
+
+    else{
+        createchart(labelsmoy, firstgrafdata, secondgrafdata)
+    }
+}
+function createchart(labelsmoy, firstgrafdata, secondgrafdata){
+    char = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: clabels,
+            labels: labelsmoy,
             datasets: [{
                 label: "New Visitor",
                 pointRadius: 0,
                 fill: true,
                 backgroundColor: 'rgba(76, 132, 255, 0.9)',
                 borderColor: 'rgba(76, 132, 255, 0.9)',
-                data: chartdata[1],
+                data: firstgrafdata,
                 cubicInterpolationMode: 'monotone',
             }, {
                 label: "Return Visitor",
@@ -55,7 +76,7 @@ function renderchart(chartdata,clabels) {
                 fill: true,
                 backgroundColor: 'rgba(0,35,148,0.9)',
                 borderColor: 'rgba(0,35,148,0.9)',
-                data: chartdata[0],
+                data: secondgrafdata,
                 cubicInterpolationMode: 'monotone',
 
             }]
@@ -99,33 +120,58 @@ function renderchart(chartdata,clabels) {
             },
         }
 
-    });
+
+    })
 }
 
-var area = document.getElementById("StrafickG01").getContext("2d");
-var urChart = new Chart(area, {
-    type: 'doughnut',
-    data: {
-        labels: [30],
-        datasets: [{
-            data: [100],
-            backgroundColor: [
-                'rgb(155,155,155)',
-                'rgb(94,101,187)',
-                'rgb(2,9,91)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
+$.ajax({
+    url: "/js/data.json",
+    success: function (result) {
+        let area = document.getElementById("StrafickG01").getContext("2d");
 
-        plugins: {
-            legend: {
-                display: false,
+        const urChart = new Chart(area, {
+
+            type: 'doughnut',
+            data: {
+                labels: [
+                    "Google",
+                    "Safari",
+                    "Firefox"
+                ],
+                datasets: [{
+                    data: result.Grafdata,
+
+                    backgroundColor: [
+                        'rgb(155,155,155)',
+                        'rgb(94,101,187)',
+                        'rgb(2,9,91)'
+                    ],
+                    borderWidth : 1
+                }]
+            },
+            options: {
+
+                plugins: {
+                    legend: {
+                        display: false,
+                    }
+                }
             }
-        }
+        })
+    },
+    error: function (err) {
+        $(".StrafickGoogle").html("Error");
     }
-})
+});
+
+
+
+
+
+
+
+
+
 var area = document.getElementById("Graf01").getContext("2d");
 var urChart = new Chart(area, {
     type: 'line',

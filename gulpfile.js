@@ -38,7 +38,7 @@ function task_scss(){
 exports.sass = task_scss
 function task_data(){
     return src("app/js/*.json")
-        .pipe(dest("dist/js"));
+       .pipe(dest("dist/js"));
 
 }
 exports.data = task_data
